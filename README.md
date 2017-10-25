@@ -1,3 +1,8 @@
+## Demo 
+
+想參考畫面，可以從這個網頁
+http://172.104.110.249:3000
+
 ## About Me
 
 Someone looking for a job
