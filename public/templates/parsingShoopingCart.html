@@ -1,0 +1,33 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Parsing Shooping Cart</h1>
+        <p>This web show something about parsing momo, yahoo. etc.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="keyword">關鍵字:</label>
+      <input type="text" class="form-control" id="keyword" ng-model="keyword">
+    </div>
+    <button type="button" class="btn btn-primary" ng-click="getPchomeItemList()"><i class="fa fa-spinner fa-spin" ng-show="pchome_loading"></i> Pchome Search</button>
+    <button type="button" class="btn btn-primary" ng-click="getYahooItemList()"><i class="fa fa-spinner fa-spin" ng-show="yahoo_loading"></i> Yahoo Search</button>
+
+    <table class="table table-striped" ng-show="table_show">
+    <thead>
+      <tr>
+        <th>名稱</th>
+        <th>敘述</th>
+        <th>圖片</th>
+        <th>價格</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in item_array">
+          <td>{{ x.name }}</td>
+          <td>{{ x.describe }}</td>
+          <td>{{ x.img }}</td>
+          <td>{{ x.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
